@@ -28,45 +28,46 @@ The dataset for finetuning can be downloaded from [DBP15K](https://www.modelscop
 
 
 🗂️ Project Structure
-
+```
 IEEA/
 ├── data/
-│   ├── DBP15K/        
-│   └── MMKG/            
+│ ├── DBP15K/
+│ └── MMKG/
 │
-├── Identifier/         
-│   ├── DBP15K/
-│   │   ├── generate_test.py
-│   │   ├── identifier_util.py
-│   │   └── train.sh
-│   └── MMKG/
-│       ├── generate_test.py
-│       ├── identifier_util.py
-│       └── train.sh
+├── Identifier/
+│ ├── DBP15K/
+│ │ ├── generate_test.py
+│ │ ├── identifier_util.py
+│ │ └── train.sh
+│ └── MMKG/
+│ ├── generate_test.py
+│ ├── identifier_util.py
+│ └── train.sh
 │
-├── LLMReason/           
-│   ├── A_DBP_part3.py     
-│   ├── A_MMKG_part3_1.py  # Reasoning script for MMKG
-│   ├── DBP_retrieval.py   
-│   ├── MMKG_retrieval.py  # Retrieval + prompt construction for MMKG
-│   └── prompt.py          # Prompt templates and formatting utilities
+├── LLMReason/
+│ ├── A_DBP_part3.py
+│ ├── A_MMKG_part3_1.py # Reasoning script for MMKG
+│ ├── DBP_retrieval.py
+│ ├── MMKG_retrieval.py # Retrieval + prompt construction for MMKG
+│ └── prompt.py # Prompt templates and formatting utilities
 │
-├── Prepare_EMB/          # MMKG embedding preparation (EIEA-inspired)
-│   ├── DBP15K/            
-│   └── MMKG/
-│       ├── count.py       
-│       ├── dataset.py     
-│       ├── gcn_layer.py   
-│       ├── model.py      
-│       ├── run.py        
-│       └── run.sh         
+├── Prepare_EMB/ # MMKG embedding preparation (EIEA-inspired)
+│ ├── DBP15K/
+│ └── MMKG/
+│ ├── count.py
+│ ├── dataset.py
+│ ├── gcn_layer.py
+│ ├── model.py
+│ ├── run.py
+│ └── run.sh
 │
-└── Retrieval/            # Retrieval module
-    ├── DBP/
-    │   ├── run.sh         # Run retrieval for DBP15K
-    │   └── topk_retrieval.py
-    └── MMKG/
-        └── ...            # (likely similar structure for MMKG retrieval)
+└── Retrieval/ # Retrieval module
+├── DBP/
+│ ├── run.sh # Run retrieval for DBP15K
+│ └── topk_retrieval.py
+└── MMKG/
+└── ... # (likely similar structure for MMKG retrieval)
+```
 
 🌐 1. MMKG Embedding Preparation
 
